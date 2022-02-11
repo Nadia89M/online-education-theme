@@ -75,27 +75,22 @@ get_header();
                             <p>Progressively promote highly efficient leadership skill with plugand creative educatonplay alignment Distinctively strategize marketdriven architectures vis a avis professional collaboration and ideashai Rapidiously enhance an expanded array of supply chains for real-time services. Uniquely visualize an user Progressively promote highly efficient leadership skills with plugand creative educationplay and alignment Distinctively strategize marketdriven architectures vis avis professional collaboration and ideashaing Rapidiously enhance an expanded array of supply chains for real-time services. Uniquely visualize user.</p>
                             <p>Progressively promote highly efficient leadership skills with plugand creative education alignments Distinctively strategize marketdriven architectures vis a avis professional collaborations ideashaing Rapidiously enhance an expanded array of supply chains for a real-time services. Uniquely visualize user friendly strategic theme areas friendly strategic theme areas.</p>
 
-                            <div class="course-attachments">
-                                <h4>Section 01: Angularjs - How to Make Your Browsers Smarter</h4>
-                                <ul>
-                                    <li><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a href="#">Credibly recaptiualize innovative channels after</a> <span>24 min</span></li>
-                                    <li><i class="fa fa-volume-up" aria-hidden="true"></i> <a href="#">Credibly recaptiualize innovative channels after</a> <span>24 min</span></li>
-                                    <li><i class="fa fa-file-video-o" aria-hidden="true"></i> <a href="#">Credibly recaptiualize innovative channels after</a> <span>24 min</span></li>
-                                    <li><i class="fa fa-file-archive-o" aria-hidden="true"></i> <a href="#">Credibly recaptiualize innovative channels after</a> <span>24 min</span></li>
-                                    <li><i class="fa fa-file-word-o" aria-hidden="true"></i> <a href="#">Credibly recaptiualize innovative channels after</a> <span>24 min</span></li>
-                                </ul>
-                            </div>
-
-                            <div class="course-attachments">
-                                <h4>Section 02: Angularjs - How to Make Your Browsers Smarter</h4>
-                                <ul>
-                                    <li><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a href="#">Credibly recaptiualize innovative channels after</a> <span>24 min</span></li>
-                                    <li><i class="fa fa-volume-up" aria-hidden="true"></i> <a href="#">Credibly recaptiualize innovative channels after</a> <span>24 min</span></li>
-                                    <li><i class="fa fa-file-video-o" aria-hidden="true"></i> <a href="#">Credibly recaptiualize innovative channels after</a> <span>24 min</span></li>
-                                    <li><i class="fa fa-file-archive-o" aria-hidden="true"></i> <a href="#">Credibly recaptiualize innovative channels after</a> <span>24 min</span></li>
-                                    <li><i class="fa fa-file-word-o" aria-hidden="true"></i> <a href="#">Credibly recaptiualize innovative channels after</a> <span>24 min</span></li>
-                                </ul>
-                            </div>
+                            <?php $sections = get_field("sections");
+                                if($sections) {
+                                    foreach($sections as $section) { ?>
+                                        <div class="course-attachments">
+                                            <h4><?php echo get_the_title($section->ID); ?></h4>
+                                            <ul>
+                                                <li><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a href="#">Credibly recaptiualize innovative channels after</a> <span>24 min</span></li>
+                                                <li><i class="fa fa-volume-up" aria-hidden="true"></i> <a href="#">Credibly recaptiualize innovative channels after</a> <span>24 min</span></li>
+                                                <li><i class="fa fa-file-video-o" aria-hidden="true"></i> <a href="#">Credibly recaptiualize innovative channels after</a> <span>24 min</span></li>
+                                                <li><i class="fa fa-file-archive-o" aria-hidden="true"></i> <a href="#">Credibly recaptiualize innovative channels after</a> <span>24 min</span></li>
+                                                <li><i class="fa fa-file-word-o" aria-hidden="true"></i> <a href="#">Credibly recaptiualize innovative channels after</a> <span>24 min</span></li>
+                                            </ul>
+                                        </div>
+                                   <?php }
+                                }
+                            ?>
 
                         </div><!-- outcomes -->
 
@@ -103,7 +98,7 @@ get_header();
                             <h4>About Instructor</h4>
                             <div class="content-bg">
                                 <div class="image">
-                                    <img src="images/courses/instructor.jpg" alt="instructor image" class="img-responsive">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/courses/instructor.jpg" alt="instructor image" class="img-responsive">
                                 </div>
                                 <div class="content">
                                     <h5>Robot Jhonson</h5>
@@ -172,7 +167,7 @@ get_header();
                         <div class="course-reviews">
                             <div class="review-item">
                                 <div class="image">
-                                    <img src="images/courses/review_01.jpg" alt="client image" class="img-responsive">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/courses/review_01.jpg" alt="client image" class="img-responsive">
                                 </div>
                                 <div class="content">
                                     <div class="title">
@@ -191,7 +186,7 @@ get_header();
                             </div><!-- review item -->
                             <div class="review-item">
                                 <div class="image">
-                                    <img src="images/courses/review_02.jpg" alt="client image" class="img-responsive">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/courses/review_02.jpg" alt="client image" class="img-responsive">
                                 </div>
                                 <div class="content">
                                     <div class="title">
@@ -210,7 +205,7 @@ get_header();
                             </div><!-- review item -->
                             <div class="review-item">
                                 <div class="image">
-                                    <img src="images/courses/review_03.jpg" alt="client image" class="img-responsive">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/courses/review_03.jpg" alt="client image" class="img-responsive">
                                 </div>
                                 <div class="content">
                                     <div class="title">
@@ -229,7 +224,7 @@ get_header();
                             </div><!-- review item -->
                             <div class="review-item">
                                 <div class="image">
-                                    <img src="images/courses/review_04.jpg" alt="client image" class="img-responsive">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/courses/review_04.jpg" alt="client image" class="img-responsive">
                                 </div>
                                 <div class="content">
                                     <div class="title">
@@ -247,30 +242,6 @@ get_header();
                                 </div>
                             </div><!-- review item -->
                         </div><!-- course reviews -->
-                        <div class="review-form">
-                            <h4>Add A Review</h4>
-                            <div class="row">
-                                <div class="col-md-4 col-sm-4 col-xs-12">
-                                    <input type="text" name="name" placeholder="Full Name" class="form-item">
-                                </div>
-                                <div class="col-md-4 col-sm-4 col-xs-12">
-                                    <input type="email" name="email" placeholder="Email Address" class="form-item">
-                                </div>
-                                <div class="col-md-4 col-sm-4 col-xs-12">
-                                    <span>Your Rating: </span>
-                                    <div class="course-rating">
-                                        <a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
-                                        <a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
-                                        <a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
-                                        <a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
-                                        <a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div><!-- row -->
-                            <textarea rows="5" class="form-item">Type Here Message</textarea>
-                            <button class="button-default">Submit review</button>
-                        </div>
-
                     </div><!-- course single item -->
         </div><!-- container -->
     </section><!-- courses -->
