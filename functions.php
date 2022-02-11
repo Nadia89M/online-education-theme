@@ -243,7 +243,7 @@ function auto_redirect_after_logout()
 }
 
 // Course Custom Post Type
-function create_project_type()
+function create_course_type()
 {
 
 	register_post_type(
@@ -259,6 +259,7 @@ function create_project_type()
 			),
 			'public' => true,
 			'has_archive' => true,
+			'hierarchical' => true,
 			'rewrite' => array('slug' => 'courses'),
 			'show_in_rest' => true,
 			'menu_position'       => 5,
@@ -267,5 +268,32 @@ function create_project_type()
 		)
 	);
 }
-// Hooking up our function to theme setup
-add_action('init', 'create_project_type');
+add_action('init', 'create_course_type');
+
+// Section Custom Post Type
+function create_section_type()
+{
+
+	register_post_type(
+		'sections',
+		// CPT Options
+		array(
+			'supports' => array(
+				'title', 'editor', 'thumbnail', 'excerpt'
+			),
+			'labels' => array(
+				'name' => __('Sections'),
+				'singular_name' => __('Section')
+			),
+			'public' => true,
+			'has_archive' => true,
+			'hierarchical' => true,
+			'rewrite' => array('slug' => 'sections'),
+			'show_in_rest' => true,
+			'menu_position'       => 6,
+			'menu_icon'           => 'dashicons-editor-ul',
+
+		)
+	);
+}
+add_action('init', 'create_section_type');
