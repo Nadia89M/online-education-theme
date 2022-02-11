@@ -171,6 +171,7 @@ function online_education_theme_scripts()
 	wp_enqueue_script('online-education-quick-view', get_template_directory_uri() . '/assets/js/quick-view.js', array(), _S_VERSION, true);
 	wp_enqueue_script('online-education-nstSlider', get_template_directory_uri() . '/assets/js/jquery.nstSlider.js', array(), _S_VERSION, true);
 	wp_enqueue_script('online-education-easing', get_template_directory_uri() . '/assets/js/jquery.easing.min.js', array(), _S_VERSION, true);
+	wp_enqueue_script('online-education-flexslider', get_template_directory_uri() . '/	assets/js/flexslider-min.js', array(), _S_VERSION, true);
 	wp_enqueue_script('online-education-custom', get_template_directory_uri() . '/	assets/js/custom.js', array(), _S_VERSION, true);
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {

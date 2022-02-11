@@ -39,20 +39,6 @@
 		</tr>
 	</table>
 	<header class="header-fixed">
-		<div class="header-top">
-			<div class="container">
-				<ul class="left">
-					<li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Phone : 8801 923 154 259</li>
-					<li><span><i class="fa fa-clock-o" aria-hidden="true"></i></span> Opening Time : 9:30am-5:30pm</li>
-					<li><span><i class="fa fa-home" aria-hidden="true"></i></span> Address : Labartisan 1205 Dhaka</li>
-				</ul>
-				<ul class="right">
-					<li><i class="fa fa-registered" aria-hidden="true"></i> <a href="#">Register</a></li>
-					<li>|</li>
-					<li><i class="fa fa-lock" aria-hidden="true"></i> <a href="#">Login</a></li>
-				</ul>
-			</div><!-- container -->
-		</div><!-- header top -->
 		<div class="main-menu">
 			<nav class="navbar ">
 				<div class="container">
