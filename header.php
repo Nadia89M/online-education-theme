@@ -65,10 +65,6 @@
 							?>
 
 						</ul>
-						<form class="menu-search-form">
-							<input type="text" name="search" placeholder="Search here...">
-							<span class="menu-search-close"><i class="fa fa-times" aria-hidden="true"></i></span>
-						</form>
 					</div><!-- /.navbar-collapse -->
 				</div><!-- /.container -->
 			</nav>
