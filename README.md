@@ -1,7 +1,7 @@
 Online Education Theme
 ===
 
-Online Education Theme is a WordPress Themes, learning management system (LMS) based on WordPress platform in which courses and lessons are easily made and managed.
+Online Education Theme is a WordPress Theme, a learning management system (LMS) based on WordPress in which courses and lessons are easily created and managed.
 
 Online Education Theme is fully responsive.
 
