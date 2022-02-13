@@ -53,7 +53,7 @@ get_header();
                                         <button>View Course</button>
                                     </a>
                                 <?php } else {?>
-                                    <a href="<?php echo esc_url(site_url(the_field('enrolment_url'))); ?>">
+                                    <a href="<?php echo the_field('enrolment_url'); ?>">
                                         <button>Enroll</button>
                                     </a>
                                 <?php } ?>
