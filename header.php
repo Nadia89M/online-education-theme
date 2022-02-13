@@ -56,14 +56,23 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav navbar-right">
-							<?php if (!is_user_logged_in()) { ?>
+							<?php if (pmpro_hasMembershipLevel('UX Design Program', get_current_user_id())): ?>
+								<li><a href="<?php echo site_url('/courses/ux-design-program/') ?>">UX Design</a></li>
+							<?php
+							elseif (pmpro_hasMembershipLevel('UI Design Program', get_current_user_id())): ?>
+								<li><a href="<?php echo site_url('/courses/ui-design-program/') ?>">UI Design</a></li>
+							<?php 
+							elseif (pmpro_hasMembershipLevel('Full-Stack Web Development Program', get_current_user_id())): ?>
+								<li><a href="<?php echo site_url('/courses/web-development-program/') ?>">Full-Stack Web Development Program</a></li>
+							<?php 
+							endif;
+							?>
+							<?php if (!is_user_logged_in()): ?>
 								<li><a href="<?php echo site_url('/login') ?>">Log In</a></li>
 							<?php
-							} else { ?>
+							else: ?>
 								<li><a href="<?php echo site_url('/wp-login.php?action=logout') ?>">Log Out</a></li>
-							<?php }
-							?>
-
+							<?php endif; ?>
 						</ul>
 					</div><!-- /.navbar-collapse -->
 				</div><!-- /.container -->
